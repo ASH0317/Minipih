@@ -22,6 +22,18 @@ body{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
+.pat img, .pat1 img{
+    
+    width: 110px;
+}
+.pat{
+    position:absolute;
+    right: 5px;
+}
+.pat1{
+    position:absolute;
+    left: 5px;
+}
 .header{
     height: 100vh;
     width: 100%;
@@ -449,6 +461,12 @@ ul li{
     
     .banner a{
         margin-bottom: 30px;
+    }
+    .pat{
+        display: none;
+    }
+    .pat1{
+        display: none;
     }
 
 }
