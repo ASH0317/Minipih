@@ -343,7 +343,9 @@ ul li{
 
 
 
-
+.history1{
+    height: 0;
+}
 
 
 
@@ -541,6 +543,9 @@ ul li{
     .timer__items{
         font-size: 38px;
     }
+    .history1{
+        height: 0;
+    }
 }
 @media (max-width: 476px){
    .fact_title{
@@ -563,6 +568,9 @@ ul li{
     .history{
         height: 1615px;
     }
+    .history1{
+        height: 0;
+    }
 }
 @media (max-width: 387px){
     .header_title h1 {
@@ -577,11 +585,17 @@ ul li{
     margin-top: 0;
     height: 1647px;
 }
+.history1{
+    height: 0;
+}
 
 }
 @media (max-width: 370px){
     .history{
         height: 1883px;
+    }
+    .history1{
+        height: 0;
     }
    
 
@@ -594,6 +608,9 @@ ul li{
 @media (max-width: 322px){
     .history{
         height: 2098px;
+    }
+    .history1{
+        height: 0;
     }
 }
 @media (max-width: 345px){
