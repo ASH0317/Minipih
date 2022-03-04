@@ -59,3 +59,24 @@ $( function() {
     // вызываем функцию countdownTimer каждую секунду
     timerId = setInterval(countdownTimer, 1000);
   });
+
+
+
+
+
+  
+const openPopUp = document.querySelectorAll('.button-popap')
+const closePopUp = document.getElementById('pop_up_close');
+const popUp = document.getElementById('pop_up');
+
+
+for (const openPopUp1 of openPopUp) {
+    openPopUp1.addEventListener('click', function(e) {
+        e.preventDefault();
+        popUp.classList.add('active');
+    })
+}
+
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active');
+})
