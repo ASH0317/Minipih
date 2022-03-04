@@ -16,7 +16,7 @@
 body{
     margin: 0;
     font-family: 'Kornilow';
-    background: radial-gradient(circle, rgba(255,139,234,1) 0%, rgba(136,108,204,1) 100%);}
+    background: radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%);}
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -141,18 +141,7 @@ font-size: 40px;
     display: block;
     border: 3px solid #fff;
 }
-/* .history{
-    margin-top: 220px;
-}
-.history p{
-    text-align: center;
-    margin-right: 300px;
-     margin-left: 300px;
-     font-size: 34px;
-     border: 10px dotted #fff;
-     padding: 45px;
-     color: #fff;
-} */
+
 
 
 ul li{
@@ -185,10 +174,83 @@ ul li{
             width:13px;
             height:13px;
         }
-    .fact_img-big{
-        width: 100% !important;
-    }
+   .fact-bg{
+       background-image: url(../img/4.jpg);
+       background-repeat: no-repeat;
+       background-size: contain;
+       background-position: center top;
+       min-height: 420px;
+   }
+.history{
+    margin-top: 220px;
+    position: relative;
+    height: 1296px;
+}
+.history_container{
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 42%;
+    transform: translate(-42%, 0);  
+}
 
+.history_container-abs{
+    text-align: left;
+     font-size: 27px;
+     padding: 45px;
+     padding-top: 110px;
+     padding-bottom: 80px;
+     color: #fff;
+     background-color:#CC99FF;
+   width: 750px;
+   position: absolute;
+   top: 90px;
+   left: 57%;
+   transform: translate(-57%, 0); 
+}
+.history_container-abs p{
+    margin: 0 50px 0 20px;
+}
+.history span{
+    color: #9900CC;
+}
+.timer{
+    color: #fff;
+    margin-bottom: 150px;
+}
+.timer__items {
+    display: flex;
+    font-size: 55px;
+    justify-content: center;
+  }
+  .timer__item {
+    position: relative;
+    min-width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .timer__item::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    font-size: 14px;
+  }
+  .timer__item:not(:last-child)::after {
+    content: ':';
+    position: absolute;
+    right: -15px;
+  }
+.timer h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 47px;
+}
 
 @media (max-height: 762px){
     .header_title h1 {
@@ -221,11 +283,7 @@ ul li{
     .slick-prev{
         left: 50px;
     }
-   .fact_img-big{
-       width: 500px;
-       height: 400px !important;
-       margin-top: 60px !important;
-   }
+
     
 }
 @media (max-width: 1359px){
@@ -243,12 +301,27 @@ ul li{
 }
 
 } 
+@media (max-width: 1252px){
+    .history_container {
+        
+        left: 41%;
+    }
+ } 
 @media (max-width: 1105px){
     .fact_row{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         
+    }
+    .history_container {
+        
+        display: none;
+    }
+    .history_container-abs{
+        position: static;
+        transform: translate(0, 0);
+        margin: 0 auto;
     }
     .fact_row-reverse{
         flex-direction: column;
@@ -266,6 +339,7 @@ ul li{
     .fact_row-right{
         width: 100%;
     }
+
 
 }
 @media (max-width: 970px){
@@ -303,6 +377,18 @@ ul li{
     }
 
 }
+@media (max-width: 747px){
+
+.history_container-abs p {
+  width: auto;
+    margin: 0;
+    text-align: center;
+}
+.history_container-abs{
+    width: auto;
+}
+
+}
 @media (max-width: 715){
     .fact p {
         font-size: 30px;
@@ -323,12 +409,7 @@ ul li{
         line-height: 63px;
 }
 }
-@media (max-width: 568px){
-   .fact_img-big{
-        width: 447px;
-        height: 295px !important;
-   }
-}
+
 @media (max-width: 515px){
     .slider1 img{
         height: 500px;
@@ -342,6 +423,14 @@ ul li{
         font-size: 25px;
         line-height: 45px;
 }
+}
+@media (max-width: 476px){
+    .history{
+        height: 1843px;
+    }
+    .timer__items{
+        font-size: 38px;
+    }
 }
 @media (max-width: 430px){
     .slider1 img{
@@ -357,10 +446,12 @@ ul li{
         line-height: 41px;
         padding: 50px 78px 50px 30px;
 }
-.fact_img-big {
-    width: 447px;
-    height: 225px !important;
-  }
+
+}
+@media (max-width: 322px){
+    .history{
+        height: 2098px;
+    }
 }
 @media (max-width: 345px){
     .slider1 img{
