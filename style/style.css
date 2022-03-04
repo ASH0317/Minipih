@@ -426,7 +426,7 @@ ul li{
 }
 @media (max-width: 476px){
     .history{
-        height: 1843px;
+        height: 1423px;
     }
     .timer__items{
         font-size: 38px;
@@ -439,6 +439,9 @@ ul li{
     .fact{
         margin: 0;
     }
+    .history{
+        height: 1615px;
+    }
 }
 @media (max-width: 387px){
     .header_title h1 {
@@ -446,6 +449,20 @@ ul li{
         line-height: 41px;
         padding: 50px 78px 50px 30px;
 }
+.fact h2{
+    font-size: 35px;
+}
+.history{
+    margin-top: 0;
+    height: 1647px;
+}
+
+}
+@media (max-width: 370px){
+    .history{
+        height: 1883px;
+    }
+   
 
 }
 @media (max-width: 322px){
