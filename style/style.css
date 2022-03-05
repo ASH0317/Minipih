@@ -17,14 +17,17 @@ body{
     
     margin: 0;
     font-family: 'Kornilow';
+    background: -o-radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%);
     background: radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%);}
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 }
 .pat img, .pat1 img{
-    
     width: 110px;
+}
+.pat1 img{
+    transform: scale(-1, 1) 
 }
 .pat{
     position:absolute;
@@ -90,7 +93,9 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 .slick-next::before{
     content: "\f105";
@@ -105,12 +110,16 @@ body{
 .slick-next{
     right: 80px;
     top: 50%;
-    transform: translate(0, -50%);  
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);  
 }
 .slick-prev{
     left: 80px;
     top: 50%;
-    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
 }
 .fact{
     margin-top: 80px;
@@ -129,6 +138,8 @@ body{
     text-align: center;
 }
 .fact_row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 30px;
 
@@ -157,9 +168,6 @@ font-size: 40px;
     display: block;
     border: 3px solid #fff;
 }
-
-
-
 ul li{
     list-style-type: none;
     display: inline-block;
@@ -171,9 +179,7 @@ ul li{
 .slick-dots button {
     font-size:0;
     padding:0;
-    
     }
-   
     .slick-dots li button {
     width:8px;
     height:8px;
@@ -181,7 +187,6 @@ ul li{
     border: none;
     border-radius: 50%;
     margin-left: 15px;
-    
     }
     .slick-dots li:nth-child(1) button {
         margin-left: 0;
@@ -208,9 +213,10 @@ ul li{
     position: absolute;
     top: 0;
     left: 42%;
-    transform: translate(-42%, 0);  
+    -webkit-transform: translate(-42%, 0);
+        -ms-transform: translate(-42%, 0);
+            transform: translate(-42%, 0);  
 }
-
 .history_container-abs{
     text-align: left;
      font-size: 27px;
@@ -223,7 +229,9 @@ ul li{
    position: absolute;
    top: 90px;
    left: 57%;
-   transform: translate(-57%, 0); 
+   -webkit-transform: translate(-57%, 0);
+       -ms-transform: translate(-57%, 0);
+           transform: translate(-57%, 0); 
 }
 .pattern_img{
  rotate: 180deg;
@@ -236,8 +244,12 @@ ul li{
 }
 .banner{
     background-color:#6495ED;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     overflow-x: hidden;
 }
 .banner h2{
@@ -263,9 +275,13 @@ ul li{
     margin-bottom: 220px;
 }
 .timer__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 55px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .timer__item {
     position: relative;
@@ -281,7 +297,9 @@ ul li{
     position: absolute;
     left: 50%;
     bottom: 0;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     font-size: 14px;
   }
   .timer__item:not(:last-child)::after {
@@ -295,17 +313,6 @@ ul li{
     font-size: 47px;
     margin-top: 220px;
 }
-
-
-
-
-
-
-
-
-
-
-
 .pop_up{
     width: 100%;
     height: 100%;
@@ -314,14 +321,22 @@ ul li{
     left: 0;
     top: 0;
     z-index: 4;
-    transform: translateY(-44.5%) scale(0);
+    -webkit-transform: translateY(-44.5%) scale(0);
+        -ms-transform: translateY(-44.5%) scale(0);
+            transform: translateY(-44.5%) scale(0);
+    -webkit-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
 .pop_up.active{
-    transform: translateY(0%) scale(1);
+    -webkit-transform: translateY(0%) scale(1);
+        -ms-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
     background-color: rgba(0, 0, 0, .7);
 }
 .pop_up_container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
@@ -353,19 +368,9 @@ ul li{
     font-size: 21px;
 }
 
-
-
 .history1{
     height: 0;
 }
-
-
-
-
-
-
-
-
 @media (max-height: 762px){
     .header_title h1 {
         font-size: 65px;
@@ -385,20 +390,13 @@ ul li{
         padding: 50px 56px 50px 30px;
 }
 }
-
-
-
-
-
 @media (max-width: 1530px){
     .slick-next{
         right: 50px; 
     }
     .slick-prev{
         left: 50px;
-    }
-
-    
+    } 
 }
 @media (max-width: 1359px){
    .slider{
@@ -413,7 +411,6 @@ ul li{
 .slick-prev{
     left: 150px;
 }
-
 } 
 @media (max-width: 1252px){
     .history_container {
@@ -423,10 +420,16 @@ ul li{
  } 
 @media (max-width: 1105px){
     .fact_row{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .history_container {
         
@@ -434,12 +437,19 @@ ul li{
     }
     .history_container-abs{
         position: static;
-        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+            -ms-transform: translate(0, 0);
+                transform: translate(0, 0);
         margin: 0 auto;
     }
     .fact_row-reverse{
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     .fact_p {
         margin-top: 19px;
@@ -454,9 +464,16 @@ ul li{
         width: 100%;
     }
     .banner{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     
     .banner a{
@@ -468,7 +485,6 @@ ul li{
     .pat1{
         display: none;
     }
-
 }
 @media (max-width: 970px){
     .slick-next{
@@ -477,7 +493,6 @@ ul li{
     .slick-prev{
         left: 30px;
     }
-
 }
 @media (max-width: 930px){
     .fact h2 {
@@ -487,14 +502,12 @@ ul li{
     .fact_p {
         margin-top: 85px;
       }
-
 }
 @media (max-width: 911px){
     .header_title h1 {
         font-size: 66px;
         line-height: 90px;
 }
-
 }
 @media (max-width: 850px){
     .slick-next{
@@ -503,10 +516,8 @@ ul li{
     .slick-prev{
         left: 50px;
     }
-
 }
 @media (max-width: 747px){
-
 .history_container-abs p {
   width: auto;
     margin: 0;
@@ -515,7 +526,6 @@ ul li{
 .history_container-abs{
     width: auto;
 }
-
 }
 @media (max-width: 715){
     .fact p {
@@ -537,7 +547,6 @@ ul li{
         line-height: 63px;
 }
 }
-
 @media (max-width: 515px){
     .slider1 img{
         height: 500px;
@@ -606,17 +615,14 @@ ul li{
 .history1{
     height: 0;
 }
-
 }
 @media (max-width: 370px){
     .history{
-        height: 1883px;
+        height: 1883px; 
     }
     .history1{
         height: 0;
     }
-   
-
 }
 @media (max-width: 350px){
     .pop_up_body{
@@ -642,5 +648,4 @@ ul li{
         line-height: 37px;
         padding: 30px 30px 30px 30px;
     }
-
 }

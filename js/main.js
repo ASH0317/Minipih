@@ -60,11 +60,6 @@ $( function() {
     timerId = setInterval(countdownTimer, 1000);
   });
 
-
-
-
-
-  
 const openPopUp = document.querySelectorAll('.button-popap')
 const closePopUp = document.getElementById('pop_up_close');
 const popUp = document.getElementById('pop_up');
