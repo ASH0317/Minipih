@@ -374,7 +374,7 @@ ul li{
     margin-bottom: 0px;
     background-color: #000;
     text-align: center;
-    margin-top: -3px;
+  margin-top: 0;
     padding-bottom: 15px;
   }
 @media (max-height: 762px){
@@ -436,6 +436,9 @@ ul li{
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
+    }
+    .history{
+        margin-bottom: 0;
     }
     .history_container {
         
