@@ -23,7 +23,7 @@ $( function() {
 
    document.addEventListener('DOMContentLoaded', function() {
     // конечная дата, например 1 июля 2021
-    const deadline = new Date(2003, 04, 19);
+    const deadline = new Date("Apr 19 2003 14:00:00 GMT+0300");
     // id таймера
     let timerId = null;
     // склонение числительных
