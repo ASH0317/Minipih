@@ -16,8 +16,9 @@
 body{
     margin: 0;
     font-family: 'Kornilow';
-    background: -o-radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%);
-    background: radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%);}
+    background: -o-radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%),  url(../img/pngwing.com.png);
+    background: radial-gradient(circle, rgba(255,139,234,0.8) 0%, rgba(136,108,204,0.8) 100%),  url(../img/pngwing.com.png);
+}
 *{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
